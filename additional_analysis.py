@@ -11,7 +11,7 @@ allData = []
 
 #Aggregating the information into dataframes from all the sheets
 for i in range(7):
-    data = pd.read_excel('Jr._Data_Analyst_Project_File.xls', sheetname="Data "+str(i+1), skiprows=2)
+    data = pd.read_excel('File.xls', sheetname="Data "+str(i+1), skiprows=2)
     data.set_index(['Date'], inplace=True)
     allData.append(data)
 
